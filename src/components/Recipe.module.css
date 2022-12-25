@@ -1,0 +1,63 @@
+.card_container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  align-items: center;
+  margin: 90px;
+}
+
+.card_container .imgs_container {
+  margin-bottom: 350px;
+}
+.card_container .foodCard_header {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_container .img_food {
+  height: 350px;
+  max-width: 400px;
+  position: absolute;
+}
+
+.card_container .flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+table {
+  width: 90%;
+}
+
+table td {
+  padding: 6px;
+}
+
+.table_header {
+  font-size: 20px;
+  background-color: #a59aa2;
+}
+tbody tr:nth-child(odd) {
+  background-color: #d1cccf;
+}
+
+.recipe_info {
+  margin-top: -200px;
+  color: rgb(106, 103, 103);
+}
+.recipe_infoContent {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+.recipe_infoSubtitle {
+  margin-bottom: 5px;
+  font-size: 20px;
+  background-color: #a59aa2;
+}

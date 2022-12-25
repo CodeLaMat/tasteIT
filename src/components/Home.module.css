@@ -1,0 +1,120 @@
+.home {
+  height: 100vh;
+}
+
+.home_header_container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+  font-family: serif;
+}
+
+.header_container_video_bg {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header_container_content {
+  display: flex;
+  padding: 20px;
+  width: 70%;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  position: absolute;
+  color: rgb(228, 241, 241);
+  z-index: 2;
+}
+
+.header_container_content button {
+  width: 150px;
+  height: 40px;
+  margin-top: 70px;
+  background-color: transparent;
+  color: rgb(224, 217, 217);
+  border-radius: 3px;
+  border: 1px solid rgb(112, 98, 98);
+  cursor: pointer;
+}
+.header_container_content h1 {
+  font-size: 5em;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.home_content_container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+}
+
+.home_content_container_boxes {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 10px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.home_content_box {
+  width: 22rem;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-color: rgb(166, 172, 178);
+  padding: 5em;
+  transform-style: preserve-3d;
+  border-radius: 8px;
+  color: rgb(112, 98, 98);
+}
+
+.home_content_box:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  transform: translateZ(5rem);
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  transform: translateZ(2rem);
+}
+
+.back {
+  transform: rotateY(0.5turn);
+  background-color: #92acbc;
+}
+
+.description {
+  transform: translateZ(3rem);
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
