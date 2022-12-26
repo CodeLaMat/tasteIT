@@ -4,8 +4,6 @@ import Card from "./Card";
 
 export default function Recipes({ recipes }) {
   const [searchTerm, setSearchTerm] = useState("");
-  // const [isloading, setIsloading] = useState(true);
-  // const [error, setError] = useState("");
 
   const searchHandler = (event) => {
     setSearchTerm(event.target.value);
