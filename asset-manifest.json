@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/tasteIT/static/css/main.62244c04.css",
+    "main.js": "/tasteIT/static/js/main.da7f1cc7.js",
+    "static/media/header.mp4": "/tasteIT/static/media/header.80481bf338ac2001780f.mp4",
+    "index.html": "/tasteIT/index.html",
+    "main.62244c04.css.map": "/tasteIT/static/css/main.62244c04.css.map",
+    "main.da7f1cc7.js.map": "/tasteIT/static/js/main.da7f1cc7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62244c04.css",
+    "static/js/main.da7f1cc7.js"
+  ]
+}
