@@ -49,12 +49,12 @@
 }
 
 .home_content_container {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 35vh;
   width: 100%;
 }
 
@@ -62,12 +62,14 @@
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   gap: 10px;
-  width: 90%;
-  margin-top: 30px;
+  width: 80%;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .home_content_box {
-  width: 22rem;
+  width: 100%;
   cursor: pointer;
 }
 
