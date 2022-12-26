@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import { HashRouter, Route, Routes, useParams } from "react-router-dom";
 import axios from "axios";
 import Layout from "./pages/Layout";
 import Home from "./components/Home";
@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -38,7 +38,7 @@ export default function App() {
             <Route path="/add_recipe" element={<Add />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
