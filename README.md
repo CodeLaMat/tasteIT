@@ -4,7 +4,7 @@
 
 Welcome to my TasteIT application. This application is created as a task assigned to me as a part of my studies in REACT22S programme.
 
-TasteIT is an web application where users can add their own food recipes from their own traditional kitchen as well as from around the world. Users also can browse the list of recipes added to the database by other users.
+TasteIT is a web application where users can add their own food recipes from their own traditional kitchen as well as from around the world. Users also can browse the list of recipes added to the database by other users.
 
 ## Technologies used
 
@@ -19,7 +19,7 @@ TasteIT is an web application where users can add their own food recipes from th
 
 ## Setup and usage
 
-Live page [here](https://codelamat.github.io/tasteIT/)
+Live page [here](https://codelamat.github.io/tasteIT/). Note! You may face difficulties to see the database in livepage since the database is in local db file. It is recomended to clone the gitHub link and run the server locally.
 
 ## Screenshot
 
