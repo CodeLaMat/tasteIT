@@ -42,7 +42,7 @@ Eyvaz Alishov
 - GitHub @CodeLaMat
 - [LinkedIn](https://www.linkedin.com/in/eyvaz-alishov-54361054/)
 
-### License
+## License
 
 Copyright © 2022 [Eyvaz Alishov] (https://github.com/CodeLaMat)
 
