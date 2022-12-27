@@ -25,15 +25,15 @@ Live page [here](https://codelamat.github.io/tasteIT/)
 
 ### Homepage
 
-![ScreenShot](./src/assests/ScreenShots/1.png)
+![ScreenShot](./src/assets/ScreenShots/1.png)
 
 ### Recipes page
 
-![ScreenShot](./src/assests/ScreenShots/2.png)
+![ScreenShot](./src/assets/ScreenShots/2.png)
 
 ### Add recipe page
 
-![ScreenShot](./src/assests/ScreenShots/3.png)
+![ScreenShot](./src/assets/ScreenShots/3.png)
 
 ### Authors and acknowledgment
 
