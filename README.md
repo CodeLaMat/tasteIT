@@ -42,6 +42,12 @@ Eyvaz Alishov
 - GitHub @CodeLaMat
 - [LinkedIn](https://www.linkedin.com/in/eyvaz-alishov-54361054/)
 
+### License
+
+Copyright © 2022 [Eyvaz Alishov] (https://github.com/CodeLaMat)
+
+This project is [MIT] licensed (https://github.com/CodeLaMat/tasteIT/blob/master/LICENSE)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
