@@ -928,54 +928,6 @@
         "Place the chicken on the prepared baking sheet and bake for 25-30 minutes, or until cooked through and the internal temperature reaches 165°F (75°C).",
         "Serve the chicken with rice and steamed vegetables, if desired."
       ]
-    },
-    {
-      "id": 16,
-      "name": "Qayganaq",
-      "author": "Eyvaz",
-      "country": "Azerbaijan",
-      "flagLink": "https://flagcdn.com/w320/az.png",
-      "description": "Qayganaq",
-      "ingredients": [
-        {
-          "name": "Egg",
-          "quantity": "3",
-          "unit": "piece"
-        },
-        {
-          "name": "Salt",
-          "quantity": "1",
-          "unit": "tsp"
-        }
-      ],
-      "preparation_time": "20",
-      "servings": "2",
-      "image": "https://www.whiskaffair.com/wp-content/uploads/2017/11/Akuri-2-3-500x500.jpg",
-      "instruction": "lkjhgfds"
-    },
-    {
-      "id": 17,
-      "name": "Bozbash",
-      "author": "Eyvaz",
-      "country": "Azerbaijan",
-      "flagLink": "https://flagcdn.com/w320/az.png",
-      "description": "Sulu yemek",
-      "ingredients": [
-        {
-          "name": "Meat",
-          "quantity": "1",
-          "unit": "kg"
-        },
-        {
-          "name": "Water",
-          "quantity": "2",
-          "unit": "glasses"
-        }
-      ],
-      "preparation_time": "20",
-      "servings": "4",
-      "image": "https://cdn.yemek.com/mnresize/1250/833/uploads/2021/02/parca-bozbas-tarifi.jpg",
-      "instruction": "khjghfgdfdsbnbmkuyjhfbv cv,jhjhfb"
     }
   ]
 }
