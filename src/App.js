@@ -12,11 +12,6 @@ import "./App.css";
 
 //This is for letting Route to acknowledge the class component
 
-const Routerwrapper = (props) => {
-  const params = useParams();
-  return <Recipe params={params} {...props} />;
-};
-
 export default function App() {
   const [recipes, setRecipes] = useState([]);
 
@@ -33,7 +28,7 @@ export default function App() {
             <Route path="/recipes" element={<Recipes recipes={recipes} />} />
             <Route
               path="recipes/:name"
-              element={<Routerwrapper recipes={recipes} />}
+              element={<Recipe recipes={recipes} />}
             />
             <Route path="/add_recipe" element={<Add />} />
           </Route>

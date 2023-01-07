@@ -67,7 +67,6 @@ const Add = ({ recipes }) => {
   const postHandler = (e) => {
     axios
       .post("http://localhost:3002/recipes", recipe)
-      .then((res) => console.log(res))
       .then(window.location.reload())
       .catch((error) => console.log(error));
   };
