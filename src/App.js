@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter, Route, Routes, useParams } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import axios from "axios";
 import Layout from "./pages/Layout";
 import Home from "./components/Home";
