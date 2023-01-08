@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <main className={classes.main}>
       <Outlet />
-      {/* It is wehere we want to display the roots */}
     </main>
   );
 };
