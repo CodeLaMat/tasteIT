@@ -23,9 +23,9 @@ export default function Home() {
             TasteIT is a receipe app which is made in React lessons of REACT22S
             programme.
           </h3>
-          <a href="http://localhost:3000/recipes">
+          <Link to="/recipes">
             <button type="button">Browse recipes</button>
-          </a>
+          </Link>
         </div>
         <div className={classes.home_content_container}>
           <div>
