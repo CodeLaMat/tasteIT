@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Select from "react-select";
 import { db } from "../firebase";
-import { set, ref } from "firebase/database";
+import { ref } from "firebase/database";
 import uuid from "react-uuid";
 import { countriesURL } from "../components/utilities/api";
 import classes from "../components/Add.module.css";
@@ -69,14 +69,13 @@ const Add = ({ recipes }) => {
 
   const postHandler = () => {
     const uid = uuid();
-    set(ref(db, `/${uid}`), {
-      recipe,
-      uid,
-    });
-
-    console.log(recipe);
-
-    setRecipe();
+    axios
+      .post(ref(db, `/${uid}`), {
+        recipe,
+        uid,
+      })
+      .then(window.alert("Recipe was added to the list"))
+      .then(window.location.reload());
   };
 
   return (
