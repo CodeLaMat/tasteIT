@@ -66,7 +66,10 @@ const Add = ({ recipes }) => {
 
   const postHandler = (e) => {
     axios
-      .post("http://localhost:3002/recipes", recipe)
+      .post(
+        "https://portfolio-75021-default-rtdb.firebaseio.com/recipes.json",
+        recipe
+      )
       .then(window.location.reload());
   };
 
