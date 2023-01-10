@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Select from "react-select";
+import { db } from "../firebase";
+import { set, ref } from "firebase/database";
+import uuid from "react-uuid";
 import { countriesURL } from "../components/utilities/api";
 import classes from "../components/Add.module.css";
 
@@ -64,13 +67,16 @@ const Add = ({ recipes }) => {
     setIngredient([...ingredient, newIngredient]);
   };
 
-  const postHandler = (e) => {
-    axios
-      .post(
-        "https://portfolio-75021-default-rtdb.firebaseio.com/recipes.json",
-        recipe
-      )
-      .then(window.location.reload());
+  const postHandler = () => {
+    const uid = uuid();
+    set(ref(db, `/${uid}`), {
+      recipe,
+      uid,
+    });
+
+    console.log(recipe);
+
+    setRecipe();
   };
 
   return (
@@ -230,7 +236,7 @@ const Add = ({ recipes }) => {
           <div className={classes.preTimeInput}>
             <div className={classes.inputGroup}>
               <label htmlFor="preparation_time" className={classes.label}>
-                Requried time reqired to prepare (by minutes)
+                Requried time to prepare (by minutes)
               </label>
               <input
                 name="preparation_time"
