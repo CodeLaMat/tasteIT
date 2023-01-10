@@ -81,7 +81,6 @@
   border-radius: 5px;
   background-color: #212121;
   z-index: -1;
-  -webkit-box-shadow: 4px 8px 9px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 9px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
 }
