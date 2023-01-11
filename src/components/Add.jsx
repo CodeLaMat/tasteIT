@@ -70,7 +70,7 @@ const Add = ({ recipes }) => {
   const postHandler = () => {
     const uid = uuid();
     axios
-      .post(ref(db, `/${uid}`), {
+      .set(ref(db, `/recipe/${uid}`), {
         recipe,
         uid,
       })
