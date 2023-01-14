@@ -16,7 +16,9 @@
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
     "react-select": "^5.7.0",
+    "react-uid": "^2.3.2",
     "react-uuid": "^2.0.0",
+    "uid": "^2.0.1",
     "video-react": "^0.16.0"
   },
   "scripts": {

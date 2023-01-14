@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Select from "react-select";
-import { db } from "../firebase";
-import { ref } from "firebase/database";
+import results from "./utilities/api";
+import { db } from "../config";
+import { ref, set } from "firebase/database";
 import uuid from "react-uuid";
 import { countriesURL } from "../components/utilities/api";
 import classes from "../components/Add.module.css";
@@ -24,6 +25,7 @@ const Add = ({ recipes }) => {
     preparation_time: "",
     servings: "",
   });
+  const [recipeID, setRecipeID] = useState(15);
 
   useEffect(() => {
     axios.get(`${countriesURL}/all`).then((res) => {
@@ -67,16 +69,32 @@ const Add = ({ recipes }) => {
     setIngredient([...ingredient, newIngredient]);
   };
 
-  const postHandler = () => {
-    const uid = uuid();
-    axios
-      .set(ref(db, `/recipe/${uid}`), {
-        recipe,
-        uid,
+  const postHandler = (e) => {
+    e.preventDefault();
+    const newRecipeID = recipeID + 1;
+    results
+      .put(`recipes.json`, recipe)
+      .then((response) => {
+        console.log(response);
       })
+      .then(window.location.reload())
       .then(window.alert("Recipe was added to the list"))
-      .then(window.location.reload());
+      .catch((error) => {
+        alert(error);
+      });
   };
+
+  // const postHandler = (e) => {
+  //   e.preventDefault();
+  //   const uid = uuid();
+  //   console.log(recipe);
+  //   set(ref(db, `/recipes/${uid}`), recipe)
+  //     .then(window.location.reload())
+  //     .then(window.alert("Recipe was added to the list"))
+  //     .catch((error) => {
+  //       alert(error);
+  //     });
+  // };
 
   return (
     <div className={classes.formContainer}>
