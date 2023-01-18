@@ -4,7 +4,7 @@ import Card from "./Card";
 
 export default function Recipes({ recipes }) {
   const [searchTerm, setSearchTerm] = useState("");
-
+  const values = Object.values(recipes);
   const searchHandler = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -24,8 +24,8 @@ export default function Recipes({ recipes }) {
         />
       </div>
       <div className={classes.cards}>
-        {recipes &&
-          recipes
+        {values &&
+          values
             .filter((recipe) => {
               if (
                 recipe.name

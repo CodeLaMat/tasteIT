@@ -28,9 +28,10 @@
 }
 
 .card .img_food {
-  max-height: 200px;
-  max-width: 200px;
+  height: 200px;
+  width: 200px;
   position: absolute;
+  object-fit: cover;
 }
 
 .card .flag {
