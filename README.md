@@ -16,10 +16,11 @@ TasteIT is a web application where users can add their own food recipes from the
 - JSX
 - HTML
 - JSON
+- FIREBASE (Real-time database)
 
 ## Setup and usage
 
-Live page [here](https://codelamat.github.io/tasteIT/). Note! You may face difficulties to see the database in livepage since the database is in local db file. It is recomended to clone the gitHub link and run the server locally.
+Live page [here](https://codelamat.github.io/tasteIT/).
 
 ## Screenshot
 
