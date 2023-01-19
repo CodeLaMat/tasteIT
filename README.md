@@ -18,7 +18,7 @@ TasteIT is a web application where users can add their own food recipes from the
 - JSX
 - HTML
 - JSON
-- FIREBASE (Real-time database)
+- FIREBASE (Real-time Database)
 
 ## Setup and usage
 
