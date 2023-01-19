@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "../components/Recipes.module.css";
-import Card from "./Card";
+import SingleCard from "./Card";
 
 export default function Recipes({ recipes }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -39,7 +39,7 @@ export default function Recipes({ recipes }) {
               }
             })
             .map((recipe) => (
-              <Card
+              <SingleCard
                 key={recipe.id}
                 id={recipe.id}
                 name={recipe.name}

@@ -1,16 +1,20 @@
-import { NavLink } from "react-router-dom";
 import classes from "../components/Nav.module.css";
 
-export default function Nav() {
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+
+export default function NavComp() {
   return (
-    <nav className={classes.nav}>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/recipes">Recipes</NavLink>
-          <NavLink to="/add_recipe">Add New Recipe</NavLink>
-        </li>
-      </ul>
-    </nav>
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#/">tasteIT</Navbar.Brand>
+        <Nav className={classes.nav}>
+          <Nav.Link href="#/">Home</Nav.Link>
+          <Nav.Link href="#/recipes">Recipes</Nav.Link>
+          <Nav.Link href="#/add_recipe">Add New Recipe</Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
   );
 }
