@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/CodeLaMat/tasteIT/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/CodeLaMat/tasteIT/actions/workflows/pages/pages-build-deployment)
+
 # TasteIT:
 
 ## Short description
