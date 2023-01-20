@@ -98,6 +98,7 @@ const Add = ({ recipes }) => {
               className={classes.input}
               type="text"
               onChange={eventHandler}
+              required={true}
             />
             <div></div>
           </div>
@@ -113,6 +114,7 @@ const Add = ({ recipes }) => {
               className={classes.input}
               type="text"
               onChange={eventHandler}
+              required={true}
             />
             <div></div>
           </div>
@@ -144,6 +146,7 @@ const Add = ({ recipes }) => {
               className={classes.input}
               type="text"
               onChange={eventHandler}
+              required={true}
             />
             <div></div>
           </div>
@@ -159,6 +162,7 @@ const Add = ({ recipes }) => {
               className={classes.input}
               type="text"
               onChange={eventHandler}
+              required={true}
             />
             <div></div>
           </div>
