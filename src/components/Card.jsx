@@ -15,7 +15,9 @@ export default function SingleCard({ name, image, country, flagLink }) {
         <div className={classes.card_details}>
           <Card.Title>{name[0].toUpperCase() + name.slice(1)}</Card.Title>
           <Card.Text>{country}</Card.Text>
-          <Link className={classes.card_button}>See more</Link>
+          <Link to={`${name}`} className={classes.card_button}>
+            See more
+          </Link>
         </div>
       </div>
     </Card>
