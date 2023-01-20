@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import classes from "./Card.module.css";
 import { Link } from "react-router-dom";
@@ -15,6 +14,7 @@ export default function SingleCard({ name, image, country, flagLink }) {
         <div className={classes.card_details}>
           <Card.Title>{name[0].toUpperCase() + name.slice(1)}</Card.Title>
           <Card.Text>{country}</Card.Text>
+
           <Link to={`${name}`} className={classes.card_button}>
             See more
           </Link>
