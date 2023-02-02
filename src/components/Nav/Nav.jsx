@@ -1,4 +1,4 @@
-import classes from "../components/Nav.module.css";
+import classes from "./Nav.module.css";
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";

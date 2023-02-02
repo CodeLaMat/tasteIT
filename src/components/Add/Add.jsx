@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Select from "react-select";
-import { db } from "../config";
+import { db } from "../../config";
 import { ref, set } from "firebase/database";
 import uuid from "react-uuid";
-import { countriesURL } from "../components/utilities/api";
-import classes from "../components/Add.module.css";
+import { countriesURL } from "../utilities/api";
+import classes from "./Add.module.css";
 
 const Add = ({ recipes }) => {
   const [options, setOptions] = useState([]);

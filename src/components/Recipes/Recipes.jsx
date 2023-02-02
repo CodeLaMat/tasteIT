@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import classes from "../components/Recipes.module.css";
-import SingleCard from "./Card";
+import classes from "./Recipes.module.css";
+import SingleCard from "../Card/Card";
 
 export default function Recipes({ recipes }) {
   const [searchTerm, setSearchTerm] = useState("");

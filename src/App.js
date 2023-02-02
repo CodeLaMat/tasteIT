@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import axios from "axios";
 import Layout from "./pages/Layout";
-import Home from "./components/Home";
-import Recipes from "./components/Recipes";
-import Add from "./components/Add";
-import Recipe from "./components/Recipe";
+import Home from "./components/Home/Home";
+import Recipes from "./components/Recipes/Recipes";
+import Add from "./components/Add/Add";
+import Recipe from "./components/Recipe/Recipe";
 
 import { recipesURL } from "./components/utilities/api";
 import "./App.css";

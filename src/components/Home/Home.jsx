@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Home.module.css";
-import BgVideo from "../assets/videos/header.mp4";
+import BgVideo from "../../assets/videos/header.mp4";
 import { ExternalLink } from "react-external-link";
 
 export default function Home() {
