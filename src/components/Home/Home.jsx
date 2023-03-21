@@ -9,6 +9,7 @@ export default function Home() {
     <div className={classes.home}>
       <div className={classes.home_header_container}>
         <video
+          data-testid="videoElement"
           src={BgVideo}
           autoPlay
           muted
