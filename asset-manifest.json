@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tasteIT/static/css/main.ec5ebf9b.css",
-    "main.js": "/tasteIT/static/js/main.dfc6a03c.js",
+    "main.js": "/tasteIT/static/js/main.100a7775.js",
     "static/media/header.mp4": "/tasteIT/static/media/header.80481bf338ac2001780f.mp4",
     "index.html": "/tasteIT/index.html",
     "main.ec5ebf9b.css.map": "/tasteIT/static/css/main.ec5ebf9b.css.map",
-    "main.dfc6a03c.js.map": "/tasteIT/static/js/main.dfc6a03c.js.map"
+    "main.100a7775.js.map": "/tasteIT/static/js/main.100a7775.js.map"
   },
   "entrypoints": [
     "static/css/main.ec5ebf9b.css",
-    "static/js/main.dfc6a03c.js"
+    "static/js/main.100a7775.js"
   ]
 }
