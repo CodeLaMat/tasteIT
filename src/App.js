@@ -6,11 +6,8 @@ import Home from "./components/Home/Home";
 import Recipes from "./components/Recipes/Recipes";
 import Add from "./components/Add/Add";
 import Recipe from "./components/Recipe/Recipe";
-
 import { recipesURL } from "./components/utilities/api";
 import "./App.css";
-
-//This is for letting Route to acknowledge the class component
 
 export default function App() {
   const [recipes, setRecipes] = useState([]);
