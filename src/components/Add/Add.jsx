@@ -3,7 +3,6 @@ import axios from "axios";
 import Select from "react-select";
 import { db } from "../../config";
 import { ref, set } from "firebase/database";
-import uuid from "react-uuid";
 import { countriesURL } from "../utilities/api";
 import classes from "./Add.module.css";
 
@@ -70,7 +69,7 @@ const Add = ({ recipes }) => {
 
   const postHandler = (e) => {
     e.preventDefault();
-    const uid = uuid();
+    const uid = uid();
     set(ref(db, `/recipes/${uid}`), recipe)
       .then(() => {
         window.alert("Recipe was added to the list");
