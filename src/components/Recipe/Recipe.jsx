@@ -17,7 +17,11 @@ const Recipe = ({ recipes }) => {
                   {" "}
                   <img
                     className={classes.img_food}
-                    src={recipe.image}
+                    src={
+                      recipe.image
+                        ? recipe.image
+                        : "../../assets/generic_food.jpg"
+                    }
                     alt="recipeImage"
                   />
                 </div>

@@ -8,7 +8,11 @@ export default function SingleCard({ name, image, country, flagLink }) {
     <Card style={{ width: "18rem" }}>
       <div className={classes.singleCard}>
         <div className={classes.imgs_container}>
-          <Card.Img variant="top" className={classes.img_food} src={image} />{" "}
+          <Card.Img
+            variant="top"
+            className={classes.img_food}
+            src={image ? image : "../../assets/generic_food.png"}
+          />{" "}
           <img className={classes.flag} src={flagLink} alt="flagImage" />
         </div>
         <div className={classes.card_details}>
