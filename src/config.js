@@ -6,13 +6,13 @@ import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCQo83gZvEAcb3aTRZkNJmgV3PEt7fkfvc",
-  authDomain: "tasteit-9c866.firebaseapp.com",
-  projectId: "tasteit-9c866",
-  storageBucket: "tasteit-9c866.appspot.com",
-  messagingSenderId: "530820278455",
-  appId: "1:530820278455:web:4d2f9ac88af563f0068532",
-  measurementId: "G-GMPT25JVTK",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
