@@ -20,7 +20,7 @@ const Recipe = ({ recipes }) => {
                     src={
                       recipe.image
                         ? recipe.image
-                        : "../../assets/generic_food.jpg"
+                        : "../../assets/generic_food.png"
                     }
                     alt="recipeImage"
                   />
