@@ -1,91 +1,96 @@
 .home {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .home_header_container {
+  position: relative;
   width: 100%;
   height: 60vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  transition: 0.5s;
-  font-family: serif;
 }
 
 .header_container_video_bg {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
 
+.bg_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .header_container_content {
-  display: flex;
-  padding: 20px;
-  width: 70%;
-  flex-direction: column;
+  position: absolute;
   align-items: flex-start;
   justify-content: space-between;
-  position: absolute;
-  color: rgb(228, 241, 241);
+  color: #e4f1f1;
   z-index: 2;
 }
 
+.header_container_content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
 .header_container_content button {
-  width: 150px;
-  height: 40px;
-  margin-top: 70px;
+  padding: 10px 20px;
+  font-size: 1em;
   background-color: transparent;
   color: rgb(224, 217, 217);
-  border-radius: 3px;
   border: 1px solid rgb(112, 98, 98);
+  border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5rem;
 }
-.header_container_content h1 {
-  font-size: 5em;
-  margin-bottom: 20px;
-  font-weight: 100;
+
+.header_container_content button:hover {
+  background-color: rgba(224, 217, 217, 0.1);
 }
 
 .home_content_container {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 35vh;
-  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
 }
-
 .home_content_container_boxes {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   width: 80%;
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
 
 .home_content_box {
-  width: 100%;
   cursor: pointer;
 }
 
 .content {
-  text-align: center;
-  position: relative;
-  transition: all 2.25s;
-  background-color: rgb(166, 172, 178);
-  padding: 5em;
-  transform-style: preserve-3d;
+  background-color: #a6acb2;
+  padding: 3em;
   border-radius: 8px;
-  color: rgb(112, 98, 98);
+  position: relative;
+  perspective: 1000px;
+  transition: all 2s;
+  transform-style: preserve-3d;
 }
-
 .home_content_box:hover .content {
-  transform: rotateY(0.5turn);
+  transform: rotateY(180deg);
 }
 
 .front,
@@ -95,18 +100,28 @@
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 2em;
+  padding: 1rem;
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
 
+.front {
+  background-color: rgb(166, 172, 178);
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #92acbc;
+}
+
 .title {
   transform: translateZ(5rem);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .subtitle {
-  transform: translateZ(2rem);
+  font-size: 0.8rem;
 }
 
 .back {
@@ -115,8 +130,72 @@
 }
 
 .description {
-  transform: translateZ(3rem);
-  text-decoration: none;
   font-size: 1.5rem;
+  text-decoration: none;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .home_header_container {
+    height: 50vh;
+  }
+
+  .home {
+    min-height: 90vh;
+  }
+
+  .header_container_content {
+    height: 80%;
+  }
+
+  .header_container_video_bg {
+    height: 50vh;
+    margin-bottom: 15%;
+  }
+
+  .header_container_content h1 {
+    font-size: 3em;
+  }
+
+  .home_content_container_boxes {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    height: 100%;
+  }
+
+  .content {
+    padding: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .home_header_container {
+    height: 40vh;
+  }
+
+  .header_container_video_bg {
+    height: 30vh;
+  }
+
+  .header_container_content {
+    width: 90%;
+  }
+
+  .header_container_content h1 {
+    font-size: 2.5em;
+  }
+
+  .home_content_container_boxes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header_container_content button {
+    width: 120px;
+    height: 35px;
+  }
+
+  .content {
+    padding: 3em;
+  }
 }
